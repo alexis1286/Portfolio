@@ -1,4 +1,4 @@
-#  Portfolio Website - Alexis Lovitz 🌸
+#  Portfolio Website - Alexis Lovitz 
 
 Welcome to my portfolio website! This site showcases my skills in software development, web design, and some of my favorite projects. Designed with a soft and welcoming theme, my portfolio highlights my experience with C++, Python, Java, and web technologies like HTML, CSS, and JavaScript.
 
