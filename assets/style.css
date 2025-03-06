@@ -1,0 +1,371 @@
+body,
+html {
+	overflow-x: hidden;
+}
+
+head {
+	display: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 1300px) {
+	.about-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		padding: 20px;
+	}
+
+	.profile {
+		max-width: 100%;
+		text-align: center;
+		padding-right: 0;
+		box-sizing: border-box;
+	}
+
+	.skills {
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+		gap: 20px;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	.previous-projects {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.Attention {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 20px;
+	}
+
+	.AA-logo {
+		max-width: 100%;
+	}
+
+	.AA-Text {
+		max-width: 100%;
+		padding: 0 20px;
+		text-align: center;
+	}
+}
+
+.hero {
+	position: relative;
+	background-color: #f7cfd8;
+	padding-top: 100px;
+	padding-bottom: 0;
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+h1 {
+	color: #ec8da3;
+	font-size: 5.625rem;
+	margin: 50px auto 0 auto;
+	font-family: "Sacramento", cursive;
+	text-align: center;
+}
+
+h2 {
+	color: #ec8da3;
+	font-family: "Montserrat", sans-serif;
+	font-size: 2.5rem;
+	font-weight: normal;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.cloud-1 {
+	position: absolute;
+	right: 10px;
+	top: 270px;
+}
+
+.cloud-2 {
+	position: absolute;
+	left: 80px;
+	top: 10px;
+}
+.cloud-3 {
+	position: absolute;
+	left: 30px;
+	bottom: 300px;
+}
+
+.flowers {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/*Skills Section*/
+
+/* About me header  */
+.about-me > h2 {
+	font-family: "Montserrat", sans-serif;
+	padding-top: 50px;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	color: #f7cfd8;
+	text-shadow: 4px 4px #ec8da3;
+}
+
+.about-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	padding: 50px;
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 40%;
+	padding-right: 200px;
+}
+
+.profile > p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #ec8da3;
+	text-align: center;
+	width: 400px;
+}
+.pfp {
+	border-radius: 70%;
+}
+
+.skills img {
+	width: 100px;
+	height: 100px;
+}
+
+.skills {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	max-width: 600px;
+}
+
+.skill-group {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.Skill-Img {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 140px;
+	height: 140px;
+
+	/*borders around skills*/
+	border: 5px solid #ec8da3;
+	border-radius: 25px;
+	box-shadow: 10px 10px 2px #f7cfd8;
+
+	/*text formatting*/
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #ec8da3;
+}
+
+/**Previous Project Formatting*/
+
+.previous-projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.Attention {
+	display: flex;
+	margin-bottom: 5rem;
+	justify-content: flex-start;
+}
+
+.previous-projects > h2 {
+	font-family: "Montserrat", sans-serif;
+	padding-top: 50px;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	color: #f7cfd8;
+	text-shadow: 4px 4px #ec8da3;
+}
+
+.AA-Text {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-weight: 500;
+	color: #ec8da3;
+	background-color: rgba(247, 207, 216, 0.45);
+	padding: 20px;
+	border-radius: 30px;
+	box-shadow: 10px 10px 2px #f7cfd8;
+	max-width: 60%;
+}
+
+/**links in previous projects**/
+.previous-projects a {
+	font-size: 23px;
+	margin-right: 20px;
+	font-weight: 400;
+	color: #ec8da3;
+	text-decoration-color: white;
+	text-decoration-thickness: 4px;
+}
+
+.previous-projects a:hover {
+	background-color: white;
+}
+
+/**Attention assistant heading**/
+.AA-Text > h2 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 50px;
+	text-align: center;
+	color: #ec8da3;
+}
+
+.AA-logo {
+	max-width: 50%;
+	height: auto;
+	object-fit: contain;
+	display: block;
+	margin: 0 auto;
+	padding-right: 40px;
+}
+
+/**Contact Section**/
+.contact h2 {
+	font-family: "Montserrat", sans-serif;
+	padding-top: 50px;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	color: #f7cfd8;
+	text-shadow: 4px 4px #ec8da3;
+}
+
+.contact-form-container {
+	position: relative;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	border: 5px solid #ec8da3;
+	border-radius: 25px;
+	box-shadow: 10px 10px 2px #f7cfd8;
+	padding: 20px;
+	max-width: 600px;
+}
+
+.input-field {
+	width: 500px;
+	padding: 10px;
+	border: 2px solid #ec8da3;
+	margin: 3px;
+	border-radius: 10px;
+	font-family: "Montserrat", sans-serif;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	background-color: #f7cfd8;
+	resize: none;
+	cursor: text;
+}
+
+.input-field::placeholder {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bolder;
+	color: white;
+}
+
+.input-field:focus {
+	border: 2px solid #ec8da3;
+	outline: none;
+	box-shadow: 0 0 5px #ec8da3;
+	background-color: #f7cfd8;
+	color: #ffffff;
+}
+.submit-btn {
+	align-self: flex-end;
+	margin-top: 5px;
+	padding: 10px 20px;
+	background-color: #f7cfd8;
+	border: 2px solid #ec8da3;
+	border-radius: 7px;
+	font-family: "Montserrat", sans-serif;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: bolder;
+	color: white;
+}
+
+/*footer section*/
+.footer {
+	position: relative;
+	background-color: #f7cfd8;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.footer-icons {
+	display: flex;
+	gap: 20px;
+}
+
+.footer p {
+	margin-top: 10px;
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
