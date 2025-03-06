@@ -1,6 +1,7 @@
 body,
 html {
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 head {
@@ -67,6 +68,63 @@ body {
 	}
 }
 
+
+/* Navbar Styling */
+.navbar {
+    background-color: #f7cfd8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;      
+    top: 0;               
+    width: 100%;          
+    z-index: 1000;        
+	box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ec8da3;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #ec8da3;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Resume button in the navbar */
+.resume-btn {
+    padding: 5px 15px;
+    background-color: #ec8da3;
+    border: 2px solid #f7cfd8;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.resume-btn:hover {
+    background-color: #f7cfd8;
+    color: #ec8da3;
+    border-color: #ec8da3;
+}
+
+/* Hero Styling */
 .hero {
 	position: relative;
 	background-color: #f7cfd8;
@@ -369,3 +427,4 @@ h2 {
 	font-size: 15px;
 	font-weight: bold;
 }
+

@@ -17,12 +17,25 @@
 			href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- Favicon -->
+		<link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" />
 	</head>
 	<body>
-		<section class="navbar"></section>
+		<section class="navbar">
+			<nav>
+				<a href="#home" class="nav-link">Home</a>
+				<a href="#about-me" class="nav-link">About</a>
+				<a href="#projects" class="nav-link">Projects</a>
+				<a href="#contact" class="nav-link">Contact</a>
+				<a href="./assets/A_Lovitz_Resume_2025.pdf" download class="resume-btn">Download Resume</a>
+			</nav>
+		</section>
+		
+		
+		</section>
 
 		<!--Hero Section-->
-		<section class="hero">
+		<section class="hero" id="home">
 			<div>
 				<h1>I'm Alexis</h1>
 				<h2>a developer.</h2>
@@ -54,7 +67,7 @@
 		</section>
 
 		<!-- About Me/Skills Section -->
-		<section class="about-me">
+		<section class="about-me" id="about-me">
 			<h2>About Me</h2>
 			<div class="about-content">
 				<div class="profile">
@@ -113,7 +126,7 @@
 			</div>
 		</section>
 
-		<section class="previous-projects">
+		<section class="previous-projects" id="projects">
 			<h2>Previous Projects</h2>
 			<div class="Attention">
 				<img
@@ -137,8 +150,7 @@
 				</div>
 			</div>
 		</section>
-
-		<section class="contact">
+		<section class="contact" id="contact">
 			<div class="contact-form-container">
 				<h2>Get In Touch With Me</h2>
 				<form
