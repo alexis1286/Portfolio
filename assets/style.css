@@ -13,6 +13,7 @@ body {
 	padding: 0;
 }
 
+
 @media (max-width: 1300px) {
 	.about-content {
 		display: flex;
@@ -81,7 +82,7 @@ body {
     width: 100%;          
     z-index: 1000;        
 	box-sizing: border-box;
-    transition: background-color 0.3s;
+   
 }
 
 .navbar nav {
@@ -95,7 +96,6 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
@@ -114,7 +114,6 @@ body {
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    transition: background-color 0.3s, border-color 0.3s;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
