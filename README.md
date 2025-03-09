@@ -3,7 +3,7 @@
 Welcome to my portfolio website! This site showcases my skills in software development, web design, and some of my favorite projects. Designed with a soft and welcoming theme, my portfolio highlights my experience with C++, Python, Java, and web technologies like HTML, CSS, and JavaScript.
 
 ## 🌐 Live Demo
-Check out the live version here: [Portfolio Website](https://alexis1286.github.io/Portfolio-Website/)
+Check out the live version here: [Portfolio Website](https://alexis1286.github.io/Portfolio/)
 
 ---
 
