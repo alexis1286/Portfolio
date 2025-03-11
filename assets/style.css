@@ -71,7 +71,7 @@ body {
 }
 
 /* Navbar Styling */
-.myapp-navbar {
+header{
 	background-color: var(--secondary-color);
 	padding: 0.625rem 1.25rem; /* Converted 10px 20px to rem */
 	display: flex;
@@ -86,7 +86,7 @@ body {
    
 }
 
-.myapp-navbar nav {
+header > nav {
 	display: flex;
 	gap: 1.25rem; /* Converted 20px to rem */
 }
