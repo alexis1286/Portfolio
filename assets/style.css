@@ -13,48 +13,49 @@ body {
 	padding: 0;
 }
 
+:root {
+	--primary-color: #ec8da3;
+	--secondary-color: #f7cfd8;
+	--font-family: "Montserrat", sans-serif;
+}
+
 @media (max-width: 1300px) {
 	.about-content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 30px;
-		padding: 20px;
+		gap: 1.875rem; /* Converted 30px to rem */
+		padding: 1.25rem; /* Converted 20px to rem */
 	}
 
-	.profile {
+	.profile,
+	.skills,
+	.previous-projects {
 		max-width: 100%;
-		text-align: center;
-		padding-right: 0;
+		margin: 0 auto;
+		padding: 1.25rem; /* Converted 20px to rem */
 		box-sizing: border-box;
 	}
 
 	.skills {
-		max-width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-		gap: 20px;
+		grid-template-columns: repeat(auto-fit, minmax(8.75rem, 1fr)); /* Converted 140px to rem */
+		gap: 1.25rem; /* Converted 20px to rem */
 		justify-content: center;
 		align-items: center;
-		margin: 0 auto;
-		padding: 20px;
 	}
 
 	.previous-projects {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		max-width: 100%;
-		margin: 0 auto;
-		padding: 20px;
-		box-sizing: border-box;
 	}
 
 	.Attention {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		gap: 20px;
+		gap: 1.25rem; /* Converted 20px to rem */
 	}
 
 	.AA-logo {
@@ -63,72 +64,71 @@ body {
 
 	.AA-Text {
 		max-width: 100%;
-		padding: 0 20px;
+		padding: 0 1.25rem; /* Converted 20px to rem */
 		text-align: center;
 	}
 }
 
-
 /* Navbar Styling */
-.navbar {
-    background-color: #f7cfd8;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: flex-end; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;      
-    top: 0;               
-    width: 100%;          
-    z-index: 1000;        
+.myapp-navbar {
+	background-color: var(--secondary-color);
+	padding: 0.625rem 1.25rem; /* Converted 10px 20px to rem */
+	display: flex;
+	justify-content: flex-end;
+	box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* Converted 2px 5px to rem */
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
 	box-sizing: border-box;
-    transition: background-color 0.3s;
+	transition: background-color 0.3s;
 }
 
-.navbar nav {
-    display: flex;
-    gap: 20px;
+.myapp-navbar nav {
+	display: flex;
+	gap: 1.25rem; /* Converted 20px to rem */
 }
 
 .nav-link {
-    text-decoration: none;
-    color: #ec8da3;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s;
+	text-decoration: none;
+	color: var(--primary-color);
+	font-family: var(--font-family);
+	font-weight: bold;
+	padding: 0.3125rem 0.625rem; /* Converted 5px 10px to rem */
+	transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
-    background-color: #ec8da3;
-    color: white;
-    border-radius: 5px;
+	background-color: var(--primary-color);
+	color: white;
+	border-radius: 0.3125rem; /* Converted 5px to rem */
 }
 
 /* Resume button in the navbar */
 .resume-btn {
-    padding: 5px 15px;
-    background-color: #ec8da3;
-    border: 2px solid #f7cfd8;
-    border-radius: 7px;
-    color: white;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    transition: background-color 0.3s, border-color 0.3s;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	padding: 0.3125rem 0.9375rem; /* Converted 5px 15px to rem */
+	background-color: var(--primary-color);
+	border: 0.125rem solid var(--secondary-color); /* Converted 2px to rem */
+	border-radius: 0.4375rem; /* Converted 7px to rem */
+	color: white;
+	text-decoration: none;
+	font-family: var(--font-family);
+	font-weight: bold;
+	transition: background-color 0.3s, border-color 0.3s;
+	box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.2); /* Converted 2px 5px to rem */
 }
 
 .resume-btn:hover {
-    background-color: #f7cfd8;
-    color: #ec8da3;
-    border-color: #ec8da3;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	border-color: var(--primary-color);
 }
 
 /* Hero Styling */
 .hero {
 	position: relative;
-	background-color: #f7cfd8;
-	padding-top: 100px;
+	background-color: var(--secondary-color);
+	padding-top: 6.25rem; /* Converted 100px to rem */
 	padding-bottom: 0;
 	margin: 0;
 	width: 100%;
@@ -136,37 +136,38 @@ body {
 }
 
 h1 {
-	color: #ec8da3;
+	color: var(--primary-color);
 	font-size: 5.625rem;
-	margin: 50px auto 0 auto;
+	margin: 3.125rem auto 0 auto; /* Converted 50px to rem */
 	font-family: "Sacramento", cursive;
 	text-align: center;
 }
 
 h2 {
-	color: #ec8da3;
-	font-family: "Montserrat", sans-serif;
+	color: var(--primary-color);
+	font-family: var(--font-family);
 	font-size: 2.5rem;
 	font-weight: normal;
-	padding-bottom: 10px;
+	padding-bottom: 0.625rem; /* Converted 10px to rem */
 	text-align: center;
 }
 
 .cloud-1 {
 	position: absolute;
-	right: 20px;
-	top: 270px;
+	right: 1.25rem; /* Converted 20px to rem */
+	top: 16.875rem; /* Converted 270px to rem */
 }
 
 .cloud-2 {
 	position: absolute;
-	left: 80px;
-	top: 40px;
+	left: 5rem; /* Converted 80px to rem */
+	top: 2.5rem; /* Converted 40px to rem */
 }
+
 .cloud-3 {
 	position: absolute;
-	left: 30px;
-	bottom: 300px;
+	left: 1.875rem; /* Converted 30px to rem */
+	bottom: 18.75rem; /* Converted 300px to rem */
 }
 
 .flowers {
@@ -179,21 +180,21 @@ h2 {
 
 /* About me header  */
 .about-me > h2 {
-	font-family: "Montserrat", sans-serif;
-	padding-top: 50px;
+	font-family: var(--font-family);
+	padding-top: 3.125rem; /* Converted 50px to rem */
 	font-weight: bold;
-	font-size: 60px;
+	font-size: 3.75rem; /* Converted 60px to rem */
 	text-align: center;
-	color: #f7cfd8;
-	text-shadow: 4px 4px #ec8da3;
+	color: var(--secondary-color);
+	text-shadow: 0.25rem 0.25rem var(--primary-color); /* Converted 4px to rem */
 }
 
 .about-content {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 50px;
-	padding: 50px;
+	gap: 3.125rem; /* Converted 50px to rem */
+	padding: 3.125rem; /* Converted 50px to rem */
 }
 
 .profile {
@@ -203,39 +204,40 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	max-width: 40%;
-	padding-right: 200px;
+	padding-right: 12.5rem; /* Converted 200px to rem */
 }
 
 .profile > p {
-	font-family: "Montserrat", sans-serif;
+	font-family: var(--font-family);
 	font-size: 1rem;
 	font-weight: bold;
-	color: #ec8da3;
+	color: var(--primary-color);
 	text-align: center;
-	width: 400px;
+	width: 25rem; /* Converted 400px to rem */
 }
+
 .pfp {
 	border-radius: 70%;
 }
 
 .skills img {
-	width: 100px;
-	height: 100px;
+	width: 6.25rem; /* Converted 100px to rem */
+	height: 6.25rem; /* Converted 100px to rem */
 }
 
 .skills {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 20px;
+	gap: 1.25rem; /* Converted 20px to rem */
 	justify-content: center;
 	align-items: center;
-	max-width: 600px;
+	max-width: 37.5rem; /* Converted 600px to rem */
 }
 
 .skill-group {
 	display: flex;
 	justify-content: center;
-	gap: 20px;
+	gap: 1.25rem; /* Converted 20px to rem */
 }
 
 .Skill-Img {
@@ -243,20 +245,20 @@ h2 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 140px;
-	height: 140px;
+	width: 8.75rem; /* Converted 140px to rem */
+	height: 8.75rem; /* Converted 140px to rem */
 
 	/*borders around skills*/
-	border: 5px solid #ec8da3;
-	border-radius: 25px;
-	box-shadow: 10px 10px 2px #f7cfd8;
+	border: 0.3125rem solid var(--primary-color); /* Converted 5px to rem */
+	border-radius: 1.5625rem; /* Converted 25px to rem */
+	box-shadow: 0.625rem 0.625rem 0.125rem var(--secondary-color); /* Converted 10px 10px 2px to rem */
 
 	/*text formatting*/
-	font-family: "Montserrat", sans-serif;
+	font-family: var(--font-family);
 	text-align: center;
 	font-size: 1rem;
 	font-weight: bold;
-	color: #ec8da3;
+	color: var(--primary-color);
 }
 
 /**Previous Project Formatting*/
@@ -271,40 +273,40 @@ h2 {
 
 .Attention {
 	display: flex;
-	margin-bottom: 5rem;
+	margin-bottom: 5rem; /* Converted 80px to rem */
 	justify-content: flex-start;
 }
 
 .previous-projects > h2 {
-	font-family: "Montserrat", sans-serif;
-	padding-top: 50px;
+	font-family: var(--font-family);
+	padding-top: 3.125rem; /* Converted 50px to rem */
 	font-weight: bold;
-	font-size: 60px;
+	font-size: 3.75rem; /* Converted 60px to rem */
 	text-align: center;
-	color: #f7cfd8;
-	text-shadow: 4px 4px #ec8da3;
+	color: var(--secondary-color);
+	text-shadow: 0.25rem 0.25rem var(--primary-color); /* Converted 4px to rem */
 }
 
 .AA-Text {
-	font-family: "Montserrat", sans-serif;
+	font-family: var(--font-family);
 	text-align: center;
 	font-weight: 500;
-	color: #ec8da3;
+	color: var(--primary-color);
 	background-color: rgba(247, 207, 216, 0.45);
-	padding: 20px;
-	border-radius: 30px;
-	box-shadow: 10px 10px 2px #f7cfd8;
+	padding: 1.25rem; /* Converted 20px to rem */
+	border-radius: 1.875rem; /* Converted 30px to rem */
+	box-shadow: 0.625rem 0.625rem 0.125rem var(--secondary-color); /* Converted 10px 10px 2px to rem */
 	max-width: 60%;
 }
 
 /**links in previous projects**/
 .previous-projects a {
-	font-size: 23px;
-	margin-right: 20px;
+	font-size: 1.4375rem; /* Converted 23px to rem */
+	margin-right: 1.25rem; /* Converted 20px to rem */
 	font-weight: 400;
-	color: #ec8da3;
+	color: var(--primary-color);
 	text-decoration-color: white;
-	text-decoration-thickness: 4px;
+	text-decoration-thickness: 0.25rem; /* Converted 4px to rem */
 }
 
 .previous-projects a:hover {
@@ -313,10 +315,10 @@ h2 {
 
 /**Attention assistant heading**/
 .AA-Text > h2 {
-	font-family: "Montserrat", sans-serif;
-	font-size: 50px;
+	font-family: var(--font-family);
+	font-size: 3.125rem; /* Converted 50px to rem */
 	text-align: center;
-	color: #ec8da3;
+	color: var(--primary-color);
 }
 
 .AA-logo {
@@ -325,23 +327,23 @@ h2 {
 	object-fit: contain;
 	display: block;
 	margin: 0 auto;
-	padding-right: 40px;
+	padding-right: 2.5rem; /* Converted 40px to rem */
 }
 
 /**Contact Section**/
 .contact h2 {
-	font-family: "Montserrat", sans-serif;
-	padding-top: 50px;
+	font-family: var(--font-family);
+	padding-top: 3.125rem; /* Converted 50px to rem */
 	font-weight: bold;
-	font-size: 60px;
+	font-size: 3.75rem; /* Converted 60px to rem */
 	text-align: center;
-	color: #f7cfd8;
-	text-shadow: 4px 4px #ec8da3;
+	color: var(--secondary-color);
+	text-shadow: 0.25rem 0.25rem var(--primary-color); /* Converted 4px to rem */
 }
 
 .contact-form-container {
 	position: relative;
-	padding-bottom: 50px;
+	padding-bottom: 3.125rem; /* Converted 50px to rem */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -351,80 +353,78 @@ h2 {
 .form {
 	display: flex;
 	flex-direction: column;
-	border: 5px solid #ec8da3;
-	border-radius: 25px;
-	box-shadow: 10px 10px 2px #f7cfd8;
-	padding: 20px;
-	max-width: 600px;
+	border: 0.3125rem solid var(--primary-color); /* Converted 5px to rem */
+	border-radius: 1.5625rem; /* Converted 25px to rem */
+	box-shadow: 0.625rem 0.625rem 0.125rem var(--secondary-color); /* Converted 10px 10px 2px to rem */
+	padding: 1.25rem; /* Converted 20px to rem */
+	max-width: 37.5rem; /* Converted 600px to rem */
 }
 
 .input-field {
-	width: 500px;
-	padding: 10px;
-	border: 2px solid #ec8da3;
-	margin: 3px;
-	border-radius: 10px;
-	font-family: "Montserrat", sans-serif;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-	background-color: #f7cfd8;
+	width: 31.25rem; /* Converted 500px to rem */
+	padding: 0.625rem; /* Converted 10px to rem */
+	border: 0.125rem solid var(--primary-color); /* Converted 2px to rem */
+	margin: 0.1875rem; /* Converted 3px to rem */
+	border-radius: 0.625rem; /* Converted 10px to rem */
+	font-family: var(--font-family);
+	box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.2); /* Converted 2px 5px to rem */
+	background-color: var(--secondary-color);
 	resize: none;
 	cursor: text;
 }
 
 .input-field::placeholder {
-	font-family: "Montserrat", sans-serif;
+	font-family: var(--font-family);
 	font-weight: bolder;
 	color: white;
 }
 
 .input-field:focus {
-	border: 2px solid #ec8da3;
+	border: 0.125rem solid var(--primary-color); /* Converted 2px to rem */
 	outline: none;
-	box-shadow: 0 0 5px #ec8da3;
-	background-color: #f7cfd8;
+	box-shadow: 0 0 0.3125rem var(--primary-color); /* Converted 5px to rem */
+	background-color: var(--secondary-color);
 	color: #ffffff;
 }
+
 .submit-btn {
 	align-self: flex-end;
-	margin-top: 5px;
-	padding: 10px 20px;
-	background-color: #f7cfd8;
-	border: 2px solid #ec8da3;
-	border-radius: 7px;
-	font-family: "Montserrat", sans-serif;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-
-	font-family: "Montserrat", sans-serif;
+	margin-top: 0.3125rem; /* Converted 5px to rem */
+	padding: 0.625rem 1.25rem; /* Converted 10px 20px to rem */
+	background-color: var(--secondary-color);
+	border: 0.125rem solid var(--primary-color); /* Converted 2px to rem */
+	border-radius: 0.4375rem; /* Converted 7px to rem */
+	font-family: var(--font-family);
+	box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.2); /* Converted 2px 5px to rem */
 	font-weight: bolder;
 	color: white;
 }
 
 /*footer section*/
-.footer {
+.footer-section {
 	position: relative;
-	background-color: #f7cfd8;
-	margin-top: 50px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	background-color: var(--secondary-color);
+	margin-top: 3.125rem; /* Converted 50px to rem */
+	padding-top: 3.125rem; /* Converted 50px to rem */
+	padding-bottom: 3.125rem; /* Converted 50px to rem */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
+	gap: 0.625rem; /* Converted 10px to rem */
 	width: 100%;
 	box-sizing: border-box;
 }
 
 .footer-icons {
 	display: flex;
-	gap: 20px;
+	gap: 1.25rem; /* Converted 20px to rem */
 }
 
-.footer p {
-	margin-top: 10px;
-	font-family: "Montserrat", sans-serif;
+.footer-section p {
+	margin-top: 0.625rem; /* Converted 10px to rem */
+	font-family: var(--font-family);
 	color: white;
-	font-size: 15px;
+	font-size: 0.9375rem; /* Converted 15px to rem */
 	font-weight: bold;
 }
-
