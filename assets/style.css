@@ -19,6 +19,7 @@ body {
 	--font-family: "Montserrat", sans-serif;
 }
 
+
 @media (max-width: 1300px) {
 	.about-content {
 		display: flex;
@@ -81,7 +82,8 @@ body {
 	width: 100%;
 	z-index: 1000;
 	box-sizing: border-box;
-    transition: background-color 0.3s;
+	transition: background-color 0.3s;
+   
 }
 
 .myapp-navbar nav {
