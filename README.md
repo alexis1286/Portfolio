@@ -9,7 +9,6 @@ Check out the live version here: [Portfolio Website](https://alexis1286.github.i
 
 ## Technologies Used
 - **Frontend:** HTML5, CSS3, JavaScript
-- 
 ---
 
 ##  Projects Featured
